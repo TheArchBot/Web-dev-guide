@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>basic</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<!-- Basic CSS 01 -->
+ <!-- content covered
+
+    Selectors
+    Colors
+    Units & Sizes
+    Margin , Padding & Borders
+    Box Model
+    Background
+
+ -->
+
+
+<!-- Topic -1 : Selectors , colors ,Unit & Sizes -->
+
+
+<!-- Sub Topic-1 Selectors -->
+
+<section>
+    
+    <!-- Note.
+    Class selector
+    Element selector
+    Id selector
+    universal selector
+    -->
+
+
+    <div>
+        <h1>Title</h1>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, fuga. Omnis reprehenderit ex reiciendis odit aspernatur ipsa officiis sit tenetur?</span>
+
+    </div>
+
+    <div>
+        <h2>Title 2</h2>
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ut.
+
+        </span>
+    </div>
+
+        <!-- 
+
+        Hierarchy
+        
+        Priority	                        Example	                            Description
+
+        Inline style	                    <h1 style="color: pink;">	        Highest priority, directly applied with the style attribute
+        Id selectors	                    #navbar	                            Second highest priority, identified by the unique id attribute of an element
+        Classes and pseudo-classes	        .test, :hover	                    Third highest priority, targeted using class names
+        Attributes	                        [type="text"]                       Low priority, applies to attributes
+        Elements and pseudo-elements	    h1, ::before, ::after	            Lowest priority, applies to HTML elements and pseudo-elements
+
+        -->
+
+</section>
+<!-- Sub Topic-2: colors -->
+
+<section>
+        
+    <!-- 
+
+    predefined color names
+    RGB
+    HEX
+    HSL
+    RGBA
+    HSLA
+
+    -->
+
+    <div>
+
+    </div>
+
+</section>
+
+<section>
+
+
+    <!-- Sub Topic-3 Units & Sizes -->
+    
+    <!-- 
+    Relative units
+
+        Unit	Description	
+        em	    Relative to the font-size of the element (2em means 2 times the size of the current font)	
+        ex	    Relative to the x-height of the current font (rarely used)	
+        ch	    Relative to width of the "0" (zero)	
+        rem	    Relative to font-size of the root element	
+        vw	    Relative to 1% of the width of the viewport*	
+        vh	    Relative to 1% of the height of the viewport*	
+        vmin	Relative to 1% of viewport's* smaller dimension	
+        vmax	Relative to 1% of viewport's* larger dimension	
+        %	    Relative to the parent element
+    
+
+    Absolute units
+
+        Unit	Description
+        cm	    centimeters
+        mm	    millimeters
+        in	    inches (1in = 96px = 2.54cm)
+        px *	pixels (1px = 1/96th of 1in)
+        pt	    points (1pt = 1/72 of 1in)
+        pc	    picas (1pc = 12 pt)
+
+    -->
+
+    <div>
+        <h2>Relative units example</h2>
+    </div>
+    
+    <div>
+        Absolute units example
+    </div>
+
+</section>
+
+
+
+
+
+<!-- Topic-2: Margin , Padding & Borders & Box Model -->
+    
+
+    <!-- Sub Topic-1:Height Width -->
+
+
+
+        <!-- Property	Description
+        height	Sets the height of an element
+        max-height	Sets the maximum height of an element
+        max-width	Sets the maximum width of an element
+        min-height	Sets the minimum height of an element
+        min-width	Sets the minimum width of an element
+        width	Sets the width of an element
+        -->
+
+
+        <!-- 
+        The height and width properties may have the following values:
+
+        auto - This is default. The browser calculates the height and width
+        length - Defines the height/width in px, cm, etc.
+        % - Defines the height/width in percent of the containing block
+        initial - Sets the height/width to its default value
+        inherit - The height/width will be inherited from its parent value
+        
+        -->
+    
+            
+        <div>
+            Height & width game
+        </div>
+
+
+    <!-- Sub Topic-2: Margin , Padding  -->
+
+
+        <!-- 
+        margin-top
+        margin-right
+        margin-bottom
+        margin-left
+        -->
+
+        <!-- 
+        All the margin properties can have the following values:
+
+        auto - the browser calculates the margin
+        length - specifies a margin in px, pt, cm, etc.
+        % - specifies a margin in % of the width of the containing element
+        inherit - specifies that the margin should be inherited from the parent element
+        
+        
+        N.B. : Negative values are allowed.
+
+
+        -->
+
+
+
+
+        <div>
+            Margin
+        </div>
+
+
+
+        <!-- Padding -->
+
+        <!-- 
+        All the padding properties can have the following values:
+
+        length - specifies a padding in px, pt, cm, etc.
+        % - specifies a padding in % of the width of the containing element
+        inherit - specifies that the padding should be inherited from the parent element
+        
+        Note: Negative values are not allowed.
+
+        -->
+
+            
+        <div>
+            Padding
+        </div>
+
+    <!-- Sub Topic-3: Box Model -->
+
+
+        <div>
+            Margin
+            <div>
+                Border
+                <Div>
+                    Padding
+                    <div>
+                        Content
+                    </div>
+                </Div>
+            </div>
+        </div>
+
+        <img src="CSS_Box_Model.png" alt="">
+    
+    <!-- 
+
+        Content - The content of the box, where text and images appear
+        Padding - Clears an area around the content. The padding is transparent
+        Border - A border that goes around the padding and content
+        Margin - Clears an area outside the border. The margin is transparent
+
+    -->
+
+    <!-- Sub Topic-4: Border -->
+
+    <div>
+        Border
+    </div>
+
+
+
+
+
+
+
+
+<!-- Topic-3: Background -->
+
+    <!-- 
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+    background
+    -->
+
+
+
+<!-- Sub Topic 1: Background color , gradient color & its oppacity  -->
+
+
+    <div>
+        Background color Demo
+    </div>
+
+
+    <!-- 
+    Types
+
+    Linear Gradients (goes down/up/left/right/diagonally)
+    Radial Gradients (defined by their center)
+    Conic Gradients (rotated around a center point)
+
+    -->
+
+
+
+    <!-- 
+
+    Function	                    Description
+    conic-gradient()	            Creates a conic gradient. Define at least two colors (around a center point)
+    linear-gradient()	            Creates a linear gradient. Define at least two colors (top to bottom)
+    radial-gradient()	            Creates a radial gradient. Define at least two colors (center to edges)
+    repeating-conic-gradient()	    Repeats a conic gradient
+    repeating-linear-gradient()	    Repeats a linear gradient
+    repeating-radial-gradient()	    Repeats a radial gradient
+
+    -->
+
+
+    <div >
+        Linear gradient example
+    </div>
+
+    <div>
+        Radial gradient example
+    </div>
+
+    <div>
+        conic-gradient example
+    </div>
+
+    <div >
+        Repeating Linear gradient example
+    </div>
+
+    <div>
+        Repeating Radial gradient example
+    </div>
+
+    <div>
+        Repeating Conic-gradient example
+    </div>
+
+
+    <!-- Fun fact try messing up with angles -->
+
+<!-- Sub Topic-2: Background Image & repeat -->
+
+
+
+    <!-- 
+    Note.
+    background-image	Sets the background image for an element 
+    -->
+
+
+    <div>
+        Background image 
+    </div>
+
+
+    <!-- 
+    Property	            Description
+    background-position	    Sets the starting position of a background image
+    background-repeat	    Sets how a background image will be repeated
+    -->
+
+
+
+<!-- Sub Topic-3: Background Attachment -->
+
+    <!-- 
+    Note.
+    Property	                Description
+    background-attachment	    Sets whether a background image is fixed or scrolls with the rest of the page
+    -->
+
+
+    <div>
+        Attachment example
+    </div>
+
+
+
+
+<!-- Sub Topic-4: Background shorthand -->
+
+    <div>
+        one is all, all is one <br>
+                        -FMA
+    </div>
+
+
+Hello
+
+
+</body>
+
+</html>b

@@ -1,0 +1,246 @@
+<!-- Lecture-01: Html its tags and attributes -->
+ <!-- 
+
+ As much Html tags as possible and how to use attributes 
+
+ -->
+
+
+<!-- Tags in html -->
+<!-- HTML tags are small commands that instruct browsers on how to interpret and display the content of a web page.  -->
+
+
+
+<!DOCTYPE html>
+
+<!-- !Doctype means its written in Html 5 -->
+<!-- Browsers are Idiots so they dont understand its html 5 just if you say -->
+<!-- 
+
+Fun fact
+
+In older documents (HTML 4 or XHTML), the declaration is more complicated because the declaration must refer to a DTD (Document Type Definition).
+
+HTML 4.01:
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+XHTML 1.1:
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+-->
+<html lang="en">
+
+<!-- Start of Html code and lang="en" means its English code -->
+
+
+<head>
+<!-- Head is for metadata  -->
+<!-- Seo depends on meta data -->
+<!-- Better metadata means it'll rank higher on search -->
+
+    <title>Document</title>
+        <!-- 
+
+        *** For later dont think abt it now ***
+         
+        Tag                                                 Description
+
+        <title>...</title>                                  Sets the title of the web page. This title appears in the browser tab and search engine results.
+        <link rel="stylesheet" href="...">                  Links an external CSS file to style the page.
+        <link rel="icon" href="...">                        Sets the favicon, the small icon displayed in the browser tab next to the page title.
+        <link rel="preconnect" href="...">                  Hints the browser to establish connections early to improve page load times for external resources.
+        <link rel="canonical" href="...">                   Specifies the main URL for the page to avoid duplicate content problems in search engines.
+        <link rel="manifest" href="...">                    Links to a manifest file used for Progressive Web Apps (PWA). Helps define app behavior and appearance.
+        <meta charset="UTF-8">                              Sets the character encoding for the document (UTF-8 handles most languages and symbols).
+        <meta name="description" content="...">             Provides a short description of the page for search engines and search results.
+        <meta name="keywords" content="...">                Lists keywords related to the page content (not commonly used by modern search engines).
+        <meta name="viewport" content="...">                Configures how the page is displayed on different devices (e.g., mobile, desktop).
+        <meta http-equiv="X-UA-Compatible" content="...">   Ensures compatibility with modern browsers and Internet Explorer.
+        <meta name="robots" content="...">                  Tells search engines whether they should index the page and follow its links.
+        <meta property="og:title" content="...">            Sets the title that appears when the page is shared on social media (Open Graph protocol).
+        <meta property="og:description" content="...">      Provides a description for the page when shared on social media.
+        <meta property="og:image" content="...">            Specifies an image to display when the page is shared on social media.
+        <meta property="og:url" content="...">              Sets the URL to use when the page is shared on social media.
+        <meta name="twitter:card" content="...">            Specifies how the page should appear when shared on Twitter (e.g., with a large image).
+        <meta name="theme-color" content="...">             Sets the color of the browser toolbar on mobile devices for better branding.
+        <meta http-equiv="refresh" content="...">           Automatically refreshes the page or redirects to another URL after a specified time.
+        <script src="..."></script>                         Links an external JavaScript file to add interactivity or functionality to the page.
+        <script>...</script>                                Embeds JavaScript code directly into the page.
+        <base href="...">                                   Sets the base URL for all relative links on the page.
+        <style>...</style>                                  Embeds CSS styles directly into the page.
+        <meta name="referrer" content="...">                Controls how much referrer information is sent when users click links.
+        <meta http-equiv="Content-Security-Policy"          content="...">  Adds security policies to control what resources can load on the page.
+        <meta name="author" content="...">                  Specifies the author of the page.
+        <meta name="generator" content="...">               Declares the tool or software used to create the page.
+        <meta name="application-name" content="...">        Names the web application, often used in mobile or desktop environments.
+        
+        -->
+    <!-- Base tag -->
+    <!--  Specify a default URL and a default target for all links on a page -->
+    <!-- 
+    Attribute	Value	    Description
+        
+    href	    URL	        Specifies the base URL for all relative URLs in the page
+    target	    _blank
+                _parent
+                _self
+                _top	    Specifies the default target for all hyperlinks and forms in the page
+
+    -->
+
+</head>
+<body>
+<!-- in body we write . code in body is what the user can see  -->
+
+<!-- The Anchor Tag -->
+    
+    <!-- Types of URL -->
+     <!-- 
+     
+     Absolute URL - Links to an external image that is hosted on another website.
+
+     Relative URL - Links to an image that is hosted within the website.
+
+     -->
+
+<!-- 
+    For Anchor tag
+    
+    Attribute	        Value	        Description
+    
+    download	        filename	    Specifies that the target will be downloaded when a user clicks on the hyperlink
+    href	            URL	            Specifies the URL of the page the link goes to
+    hreflang	        language_code	Specifies the language of the linked document
+    media	            media_query	    Specifies what media/device the linked document is optimized for
+    ping	            list_of_URLs	Specifies a space-separated list of URLs to which, when the link is followed, post requests with the body ping will be sent by the browser (in the background). Typically used for tracking.
+    referrerpolicy	    no-referrer
+                        no-referrer-when-downgrade
+                        origin
+                        origin-when-cross-origin
+                        same-origin
+                        strict-origin-when-cross-origin
+                        unsafe-url	                        {Specifies which referrer information to send with the link}
+    rel         	    alternate
+                        author
+                        bookmark
+                        external
+                        help
+                        license
+                        next
+                        nofollow
+                        noreferrer
+                        noopener
+                        prev
+                        search
+                        tag	                                {Specifies the relationship between the current document and the linked document}
+    target	            _blank
+                        _parent
+                        _self
+                        _top	                            {Specifies where to open the linked document }
+    type	            media_type	                        {Specifies the media type of the linked document}
+-->
+
+
+<!-- The Abbreviation -->
+<!-- Basically give some context to the user -->
+<!-- Mass use example : Wikipedia  -->
+
+
+<!-- Address tag -->
+<!-- Fansy way to say , " look i wrote some address here" -->
+
+
+<!-- Audio tag -->
+<!-- 
+    Attribute	    Value	        Description
+    autoplay	    autoplay	    Specifies that the audio will start playing as soon as it is ready
+    controls	    controls	    Specifies that audio controls should be displayed (such as a play/pause button etc)
+    loop	        loop	        Specifies that the audio will start over again, every time it is finished
+    muted	        muted	        Specifies that the audio output should be muted
+    preload	        auto
+                    metadata
+                    none	        Specifies if and how the author thinks the audio should be loaded when the page loads
+    src	            URL	            Specifies the URL of the audio file
+-->
+
+<!-- The br tag -->
+<!-- It's a empty tag -->
+<!-- gives a line break -->
+
+
+<!-- Button -->
+<!-- It is what it seems to be  -->
+<!-- It can have different attributes  -->
+<!-- 
+    Attribute	        Value	                                Description
+    autofocus	        autofocus	                            Specifies that a button should automatically get focus when the page loads
+    disabled	        disabled	                            Specifies that a button should be disabled
+    form	            form_id	                                Specifies which form the button belongs to
+    formaction	        URL	                                    Specifies where to send the form-data when a form is submitted. Only for type="submit"
+    formenctype	        application/x-www-form-urlencoded
+                        multipart/form-data
+                        text/plain	                            Specifies how form-data should be encoded before sending it to a server. Only for type="submit"
+    formmethod	        get
+                        post	                                Specifies how to send the form-data (which HTTP method to use). Only for type="submit"
+    formnovalidate	    formnovalidate	                        Specifies that the form-data should not be validated on submission. Only for type="submit"
+    formtarget	        _blank
+                        _self
+                        _parent
+                        _top
+                        framename	                            Specifies where to display the response after submitting the form. Only for type="submit"
+    popovertarget	    element_id	                            Specifies a which popover element to invoke
+    popovertargetaction	hide
+                        show
+                        toggle	                                Specifies what happens to the popover element when the button is clicked
+    name	            name	                                Specifies a name for the button
+    type	            button
+                        reset
+                        submit	                                Specifies the type of button
+    value	            text	                                Specifies an initial value for the button
+-->
+
+
+<!-- Canvas -->
+<!-- Draw with JS -->
+
+
+<!-- Code tag -->
+<!-- common did ya think we wont make a tag for codes ?? -->
+
+
+<!-- Datalist -->
+<!-- 
+Example 
+
+<label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+-->
+
+<!-- Embed -->
+ <!-- 
+The <embed> tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application.
+-->
+
+
+<!-- Fieldset -->
+<!-- 
+The <fieldset> tag is used to group related elements in a form.
+
+The <fieldset> tag draws a box around the related elements.
+-->
+
+
+
+
+
+</body>
+</html>
